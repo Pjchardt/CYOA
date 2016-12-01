@@ -7,6 +7,7 @@ public class WeighingPrompt : MonoBehaviour
     public Text TextReference;
     int currentIndex;
 
+
     void Awake()
     {
         TextReference.gameObject.SetActive(false);
@@ -37,5 +38,10 @@ public class WeighingPrompt : MonoBehaviour
     {
         StopAllCoroutines();
         TextReference.gameObject.SetActive(false);
+    }
+
+    public bool PromptIsActive()
+    {
+        return TextReference.gameObject.activeSelf;
     }
 }

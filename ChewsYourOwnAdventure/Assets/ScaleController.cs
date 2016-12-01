@@ -41,6 +41,7 @@ public class ScaleController : MonoBehaviour
         else
         {
             Debug.Log("Serial Port not open!");
+            Weight = 0f;
         }
     }
 }
